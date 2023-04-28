@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Unit Converter</h1>
+      <form>
+        <div class="form-group">
+          <label for="input-quantity">Input Quantity:</label>
+          <input type="number" id="input-quantity" placeholder="Enter Quantity">
+        </div>
+        <div class="form-group">
+          <label for="input-unit">Input Unit:</label>
+          <select id="input-unit">
+            <option value="meter">Meter</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="kilometer">Kilometer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="output-unit">Output Unit:</label>
+          <select id="output-unit">
+            <option value="meter">Meter</option>
+            <option value="centimeter">Centimeter</option>
+            <option value="kilometer">Kilometer</option>
+          </select>
+        </div>
+        <button type="button" onclick="convert()">Convert</button>
+      </form>
+      <div class="output">
+        <p id="output-quantity"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
